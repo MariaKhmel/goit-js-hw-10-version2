@@ -4,13 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.6.0/slimselect.css" integrity="sha512-ijXMfMV6D0xH0UfHpPnqrwbw9cjd4AbjtWbdfVd204tXEtJtvL3TTNztvqqr9AbLcCiuNTvqHL5c9v2hOjdjpA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      img{
+        width: 600px;
+        display: block;
+      }
+
+      .cat-info{
+        margin: 10px auto;
+      }
+
+      .cat-item{
+        display: flex;
+      }
+
+      .cat-descr{
+       display: block; 
+       margin-left: 10px;
+      }
+
+      .cat-title{
+        margin: 0;
+      }
+
+      .temperament-title{
+        font-weight: bold;
+      }
+
+      .error{
+        color:red;
+      }
+
+  .loaderPic {
+    width: 8px;
+    height: 8px;
+    border: 1px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+
+
+    </style>
   </head>
   <body>
-    <select class="breed-select"></select>
-    <p class="loader">Loading data, please wait...</p>
-    <p class="error">Oops! Something went wrong! Try reloading the page!</p>
+    <select id="single" class="breed-select"> </select>
+    <div id="local"></div>
+    <p class="loader"><span class="loaderPic"></span> Loading data, please wait...</p>
+    <p hidden class="error">Oops! Something went wrong! Try reloading the page!</p>
     <div class="cat-info"></div>
 
-    <script src="index.js" type="module"></script>
+<li><a href="training.html">training</a></li>
+  
+<script src="index.js" type="module"></script>
   </body>
 </html>
+
