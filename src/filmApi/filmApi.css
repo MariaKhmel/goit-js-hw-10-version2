@@ -12,3 +12,15 @@ li{
     display: block;
    
 }
+
+.load-more{
+    display: none;
+    
+    background-color: rgb(244, 244, 248);
+    border: 3px dashed black;
+}
+
+.load-more.is-visible{
+    display: block;
+    margin: auto;
+}
